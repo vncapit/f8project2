@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", "sans-serif";
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+.btn {
+    width: 118px;
+    padding: 17px 0;
+    background-color: #171100;
+    color: #fff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 999px;
+}
+
+main {
+    width: 100%;
+    height: 500vh;
+}
+
+.navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #fffcf4;
+}
+.navbar .content {
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fffcf4;
+}
+
+.navbar .lesson {
+    width: 50%;
+    max-width: 50%;
+}
+
+.navbar .lesson {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #171100;
+}
+
+.navbar .lesson span:last-child {
+    color: #ffb900;
+}
+
+.navbar .actions {
+    width: 50%;
+    max-width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .actions ul {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.navbar .actions ul li a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+
+.navbar .actions ul li:first-child a {
+    position: relative;
+    font-weight: 600;
+    color: #171100;
+}
+
+.navbar .actions ul li:first-child a::before {
+    position: absolute;
+    content: "";
+    background-color: #171100;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    width: 12px;
+}
+
+.navbar .actions .btn {
+    width: 144px;
+}
+
+.header {
+    background-color: #fffcf4;
+    padding-top: 64px;
+}
+
+.header .content {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+
+.header .header-courses {
+    position: relative;
+    width: 49%;
+}
+
+.header-courses .courses {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+
+    right: 0;
+    top: 393px;
+    width: 270px;
+    height: 244px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.header-courses .courses .courses {
+    margin-top: 28px;
+    margin-left: 24px;
+}
+
+.header-courses .courses .item {
+    display: flex;
+}
+
+.header-courses .courses .item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+}
+
+.header-courses .courses .item:nth-child(1) .icon {
+    background: #fff9e8;
+}
+.header-courses .courses .item:nth-child(2) .icon {
+    background: #fcefff;
+}
+.header-courses .courses .item:nth-child(3) .icon {
+    background: #ebeaff;
+}
+
+.item .course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.header-courses .courses .item .icon img {
+    width: 24px;
+    height: 24px;
+}
+.header .header-courses img {
+    width: 470px;
+    height: 685px;
+}
+
+.header .header-info {
+    width: 470px;
+    max-width: 470px;
+}
+
+.header-info .title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+    margin-bottom: 22px;
+    margin-top: 64px;
+}
+
+.header-info .desc {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+    margin-bottom: 38px;
+}
+
+.btn-see-course {
+    display: inline-block;
+    background-color: #ffb900;
+    padding: 24px 0;
+    width: 180px;
+    margin-right: 28px;
+}
+
+.header-action .img-play {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.header-action .play span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.header-stats .sub-title {
+    margin-top: 48px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.header-stats .stats {
+    margin-top: 8px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.header-stats .stats .count {
+    margin-right: 28px;
+}
+
+.header-stats .stats .count span:first-child {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+    color: #171100;
+    margin-right: 10px;
+}

@@ -1,0 +1,106 @@
+/* PC */
+@media screen and (min-width: 768px) {
+  .phone-menu {
+    display: none;
+  }
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 767px) {
+  body {
+    padding: 6px;
+  }
+  .navbar .actions {
+    display: none;
+  }
+
+  .navbar .lesson {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .phone-menu {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  header .header-courses {
+    display: none;
+  }
+
+  .header {
+    padding-top: 20px;
+  }
+
+  .header-info {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .header-info .title {
+    font-size: 3.2rem;
+    margin-top: 10px;
+  }
+
+  .header-action {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-see-course {
+    padding: 15px 0;
+    width: 125px;
+    margin-left: 5px;
+    margin-right: unset;
+  }
+
+  .header-stats .sub-title {
+    text-align: center;
+  }
+
+  .header-stats .stats {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-stats .stats .count {
+    margin-right: unset;
+  }
+
+  .header-stats .stats .count span {
+    font-size: 24px;
+  }
+
+  .popular-courses .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+  }
+
+  .popular-courses .content .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .popular-courses .content .row .nav {
+    margin-top: 6px;
+  }
+
+  .row .item {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .row .item img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .comment,
+  .benifits {
+    display: none;
+  }
+}
